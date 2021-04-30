@@ -29,47 +29,7 @@
 					<input type="submit" value="buscar" />
 				</p>
 			</form>
-			<div class="row">
-			<div class="col-3">Cliente:</div>
-			<div class="col-9"><c:out value="${detfac.getCliente()}"/></div>
-			</div>
-			<div class="row">
-			<div class="col-3">Fecha:</div>
-			<div class="col-9"><c:out value="${detfac.getFecha()}"/></div>
-			</div>
-			<table class="table table-bordered">
-				<thead>
-					<tr>
-						<th scope="col">Producto</th>
-						<th scope="col">Precio</th>
-						<th scope="col">Cantidad</th>
-					</tr>
-				</thead>
-				<c:forEach items="${ldetfac}" var="ld">
-				
-				<tbody>
-					<tr>
-						<td>${ld.getNombreproducto()}</td>
-						<td>${ld.getPrecio()}</td>
-						<td>${ld.getCantidad()}</td>
-					</tr>
-				</tbody>
-				</c:forEach>
-			</table>
-			<div class="row">
-			<div class="col-3">Subtotal:</div>
-			<div class="col-9"><c:out value="${detfac.getSubtotal()}"/></div>
-			</div>
-			<div class="row">
-			<div class="col-3">Impuesto:</div>
-			<div class="col-9"><c:out value="${detfac.getImpuesto()}"/></div>
-			</div>
-			<div class="row">
-			<div class="col-3">Total:</div>
-			<div class="col-9"><c:out value="${detfac.getTotal()}"/></div>
-			</div>
 		</div>
-
 	</div>
 </body>
 </html>

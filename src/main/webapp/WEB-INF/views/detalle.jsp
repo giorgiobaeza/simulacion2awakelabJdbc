@@ -30,19 +30,19 @@
 				</p>
 			</form>
 			<div class="row">
-			<div class="col-3">Cliente:</div>
-			<div class="col-9"><c:out value="${detfac.getCliente()}"/></div>
+				<div class="col-3"><b>Cliente: </b>
+				<c:out value="${detfac.getCliente()}"/></div>
 			</div>
 			<div class="row">
-			<div class="col-3">Fecha:</div>
-			<div class="col-9"><c:out value="${detfac.getFecha()}"/></div>
+				<div class="col-3"><b>Fecha: </b>
+				<c:out value="${detfac.getFecha()}"/></div>
 			</div>
 			<table class="table table-bordered">
 				<thead>
-					<tr>
-						<th scope="col">Producto</th>
-						<th scope="col">Precio</th>
-						<th scope="col">Cantidad</th>
+					<tr class="table-active">
+						<th scope="col" class="col-4">Producto</th>
+						<th scope="col" class="col-4">Precio</th>
+						<th scope="col" class="col-4">Cantidad</th>
 					</tr>
 				</thead>
 				<c:forEach items="${ldetfac}" var="ld">
@@ -57,16 +57,16 @@
 				</c:forEach>
 			</table>
 			<div class="row">
-			<div class="col-3">Subtotal:</div>
-			<div class="col-9"><c:out value="${detfac.getSubtotal()}"/></div>
+				<div class="col-3"><b>Subtotal: $</b>
+				<c:out value="${detfac.getSubtotal()}"/></div>
 			</div>
 			<div class="row">
-			<div class="col-3">Impuesto:</div>
-			<div class="col-9"><c:out value="${detfac.getImpuesto()}"/></div>
+				<div class="col-3"><b>Impuesto: $</b>
+				<c:out value="${detfac.getImpuesto()}"/></div>
 			</div>
 			<div class="row">
-			<div class="col-3">Total:</div>
-			<div class="col-9"><c:out value="${detfac.getTotal()}"/></div>
+				<div class="col-3"><b>Total: $</b>
+				<c:out value="${detfac.getTotal()}"/></div>
 			</div>
 		</div>
 
